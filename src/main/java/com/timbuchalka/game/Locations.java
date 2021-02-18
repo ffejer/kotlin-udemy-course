@@ -13,7 +13,7 @@ public class Locations {
 
         // Read locations
         try {
-            scanner = new Scanner(new FileReader("locations_big.txt"));
+            scanner = new Scanner(new FileReader("src/main/resources/locations_big.txt"));
             scanner.useDelimiter(",");
             while(scanner.hasNextLine()) {
                 int loc = scanner.nextInt();
@@ -34,7 +34,7 @@ public class Locations {
 
         // Now read the exits
         try {
-            scanner = new Scanner(new BufferedReader(new FileReader("directions_big.txt")));
+            scanner = new Scanner(new BufferedReader(new FileReader("src/main/resources/directions_big.txt")));
             scanner.useDelimiter(",");
             while(scanner.hasNextLine()) {
                 String input = scanner.nextLine();
